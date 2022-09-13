@@ -1,0 +1,40 @@
+* {
+    
+}
+
+h1 {
+    background-image: linear-gradient(to right, rgb(255, 173, 173) 50%, rgb(253, 255, 147) 0);
+    background-position: right;
+    background-size: 200% 200%;
+    transition: background-position 1.5s;
+}
+
+h1:hover {
+    background-position: left;
+}
+
+.box {
+    margin-left: 0.5vw;
+    padding-top: 20vh;
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+    height: 50vh;
+    border: 2px solid black;
+}
+
+.text {
+    color: black;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+#summer {
+    background-image: url("img/ocmd.jpg");
+    background-size: cover;
+}
+
+#goals {
+    background-image: url("img/trophy.png");
+    background-size: cover;
+}
