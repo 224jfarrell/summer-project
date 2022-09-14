@@ -1,16 +1,28 @@
-* {
-    
+html, body {
+    background-color: darkgray;
 }
 
-h1 {
-    background-image: linear-gradient(to right, rgb(255, 173, 173) 50%, rgb(253, 255, 147) 0);
+.index {
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
     background-position: right;
-    background-size: 200% 200%;
-    transition: background-position 1.5s;
+    background-size: 700% 700%;
+}
+.index:hover {
+    animation-name: progressbar; 
+    animation-duration: 10.5s;
+    animation-iteration-count: infinite;
 }
 
-h1:hover {
-    background-position: left;
+@keyframes progressbar {
+    0% {
+        background-position: right;
+    }
+    50% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
 
 .box {
